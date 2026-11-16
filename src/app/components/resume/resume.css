@@ -1,0 +1,70 @@
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 48px;
+}
+
+.text {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
+.file {
+  flex: 1 1 380px;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.file-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px;
+  padding: 28px;
+}
+
+.file-icon {
+  flex: 0 0 64px;
+  height: 78px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+  border: 2px solid var(--color-pink);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-darker);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-pink);
+}
+
+.file-info {
+  flex: 1 1 180px;
+  min-width: 0;
+}
+
+.file-name {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  word-break: break-all;
+}
+
+.file-meta {
+  margin: 4px 0 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.file-actions {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}

@@ -1,0 +1,134 @@
+:host {
+  display: block;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--color-pink);
+}
+
+.cover {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg-darker);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cover-bar {
+  display: flex;
+  gap: 6px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cover-bar span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-border);
+}
+
+.cover-img {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cover-placeholder {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 12px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  text-align: center;
+  background-image: radial-gradient(rgba(189, 147, 249, 0.14) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.path {
+  color: var(--color-text);
+}
+
+.pink {
+  color: var(--color-pink);
+}
+
+.soon {
+  color: var(--color-text-muted);
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+}
+
+.status {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-yellow);
+}
+
+.status--live {
+  color: var(--color-green);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 22px;
+  color: var(--color-cyan);
+}
+
+.description {
+  margin: 0;
+  font-size: 16px;
+  color: var(--color-text-soft);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag {
+  padding: 3px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-pink);
+}
+
+.links {
+  margin-top: auto;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+}

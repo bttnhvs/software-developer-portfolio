@@ -1,0 +1,15 @@
+<section id="projects" class="section section--dark" aria-labelledby="projects-title">
+  <div class="container">
+    <p class="eyebrow">01. projects</p>
+    <h2 id="projects-title" class="section-title">Selected work</h2>
+    <p class="lead">
+      A few things I've designed and built recently — from idea and UI design to a working app.
+    </p>
+
+    <div class="grid">
+      @for (project of projects; track project.id) {
+        <app-project-card [project]="project" />
+      }
+    </div>
+  </div>
+</section>

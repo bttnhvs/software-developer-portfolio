@@ -1,0 +1,28 @@
+<header class="header">
+  <nav class="container nav" aria-label="Main">
+    <a class="logo" href="#top" (click)="closeMenu()">
+      &lt;<span class="pink">bettina</span>.<span class="cyan">hevesi</span> /&gt;
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      [attr.aria-expanded]="menuOpen()"
+      aria-controls="main-menu"
+      [attr.aria-label]="menuOpen() ? 'Close menu' : 'Open menu'"
+      (click)="toggleMenu()"
+    >
+      <span aria-hidden="true">{{ menuOpen() ? '✕' : '☰' }}</span>
+    </button>
+
+    <ul id="main-menu" class="links" [class.links--open]="menuOpen()">
+      @for (item of navItems; track item.anchor) {
+        <li>
+          <a class="link" [href]="'#' + item.anchor" (click)="closeMenu()">
+            <span class="pink">{{ item.index }}</span> {{ item.label }}
+          </a>
+        </li>
+      }
+    </ul>
+  </nav>
+</header>

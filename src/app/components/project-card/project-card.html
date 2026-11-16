@@ -1,0 +1,39 @@
+@let p = project();
+<article class="card">
+  <div class="cover">
+    <div class="cover-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+    @if (p.image) {
+      <img class="cover-img" [src]="p.image" [alt]="'Screenshot of ' + p.title" loading="lazy" />
+    } @else {
+      <div class="cover-placeholder" aria-hidden="true">
+        <span class="path"
+          >~/projects/<span class="pink">{{ p.id }}</span></span
+        >
+        <span class="soon">// screenshot coming soon</span>
+      </div>
+    }
+  </div>
+
+  <div class="body">
+    <p class="status" [class.status--live]="p.status === 'live'">
+      {{ statusLabel() }} · {{ p.kind }}
+    </p>
+    <h3 class="title">{{ p.title }}</h3>
+    <p class="description">{{ p.description }}</p>
+
+    <ul class="tags" aria-label="Technologies">
+      @for (tag of p.tags; track tag) {
+        <li class="tag">{{ tag }}</li>
+      }
+    </ul>
+
+    <div class="links">
+      @if (p.liveUrl) {
+        <a [href]="p.liveUrl" target="_blank" rel="noopener">{{ liveUrlLabel() }} ↗</a>
+      }
+      @if (p.repoUrl) {
+        <a [href]="p.repoUrl" target="_blank" rel="noopener">github ↗</a>
+      }
+    </div>
+  </div>
+</article>

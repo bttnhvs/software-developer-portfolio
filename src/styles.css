@@ -1,0 +1,206 @@
+/* Design tokens – Dracula theme. Change colours, fonts and spacing here only. */
+:root {
+  --color-bg: #282a36;
+  --color-bg-dark: #21222c;
+  --color-bg-darker: #191a21;
+  --color-border: #44475a;
+  --color-text: #f8f8f2;
+  --color-text-soft: #d6d8e6;
+  --color-text-muted: #a0a8d0;
+  --color-pink: #ff79c6;
+  --color-cyan: #8be9fd;
+  --color-green: #50fa7b;
+  --color-yellow: #f1fa8c;
+  --color-red: #ff5555;
+
+  --font-heading: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --container: 1160px;
+  --gutter: 24px;
+  --section-pad: 96px;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --header-height: 72px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--color-cyan);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-pink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 3px;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  scroll-margin-top: var(--header-height);
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+.section {
+  padding-top: var(--section-pad);
+  padding-bottom: var(--section-pad);
+  border-top: 1px solid var(--color-border);
+}
+
+.section--dark {
+  background: var(--color-bg-dark);
+}
+
+.eyebrow {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  color: var(--color-pink);
+}
+
+.section-title {
+  margin: 8px 0 20px;
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 5vw, 44px);
+  line-height: 1.15;
+}
+
+.lead {
+  margin: 0;
+  max-width: 620px;
+  color: var(--color-text-soft);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 26px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.btn--primary {
+  border: 0;
+  background: var(--color-pink);
+  color: var(--color-bg);
+}
+
+.btn--primary:hover {
+  background: var(--color-green);
+  color: var(--color-bg);
+}
+
+.btn--ghost {
+  border: 2px solid var(--color-cyan);
+  background: transparent;
+  color: var(--color-cyan);
+  font-weight: 600;
+}
+
+.btn--ghost:hover {
+  background: rgba(139, 233, 253, 0.12);
+  color: var(--color-cyan);
+}
+
+.window-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--color-bg-darker);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.window-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.window-title {
+  margin-left: 12px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --section-pad: 64px;
+    --gutter: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Custom cursor (see CustomCursor component) */
+.has-custom-cursor,
+.has-custom-cursor * {
+  cursor: none;
+}
+
+.has-custom-cursor input,
+.has-custom-cursor textarea {
+  cursor: text;
+}

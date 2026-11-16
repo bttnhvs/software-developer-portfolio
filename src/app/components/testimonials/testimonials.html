@@ -1,0 +1,22 @@
+<section id="testimonials" class="section section--dark" aria-labelledby="testimonials-title">
+  <div class="container">
+    <p class="eyebrow">03. testimonials</p>
+    <h2 id="testimonials-title" class="section-title">Kind words</h2>
+
+    <div class="list">
+      @for (item of testimonials; track item.author) {
+        <figure class="quote">
+          <p class="mark" aria-hidden="true">“</p>
+          <blockquote>{{ item.quote }}</blockquote>
+          <figcaption>
+            <span class="avatar" aria-hidden="true">{{ item.initials }}</span>
+            <span>
+              <span class="author">{{ item.author }}</span><br />
+              <span class="role">{{ item.role }}</span>
+            </span>
+          </figcaption>
+        </figure>
+      }
+    </div>
+  </div>
+</section>

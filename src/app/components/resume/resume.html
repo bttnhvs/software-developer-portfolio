@@ -1,0 +1,32 @@
+<section id="resume" class="section section--dark" aria-labelledby="resume-title">
+  <div class="container layout">
+    <div class="text">
+      <p class="eyebrow">04. cv</p>
+      <h2 id="resume-title" class="section-title">Download my CV</h2>
+      <p class="lead">
+        A one-page overview of my experience: Angular frontend work for UK and Hungarian clients,
+        enterprise web apps, and the projects above.
+      </p>
+    </div>
+
+    <div class="file">
+      <div class="window-bar" aria-hidden="true">
+        <span class="window-dot" style="background: var(--color-red)"></span>
+        <span class="window-dot" style="background: var(--color-yellow)"></span>
+        <span class="window-dot" style="background: var(--color-green)"></span>
+        <span class="window-title">~/documents</span>
+      </div>
+      <div class="file-body">
+        <span class="file-icon" aria-hidden="true">PDF</span>
+        <div class="file-info">
+          <p class="file-name">Bettina-Hevesi-CV.pdf</p>
+          <p class="file-meta">English · 1 page · PDF</p>
+        </div>
+        <div class="file-actions">
+          <a class="btn btn--primary" [href]="cvPath" download>download_cv() ↓</a>
+          <a class="btn btn--ghost" [href]="cvPath" target="_blank" rel="noopener">view online ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

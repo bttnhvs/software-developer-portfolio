@@ -1,0 +1,109 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 56px;
+  padding-top: var(--section-pad);
+  padding-bottom: 112px;
+}
+
+.intro {
+  flex: 1 1 460px;
+  min-width: 0;
+}
+
+.editor {
+  flex: 1 1 420px;
+  min-width: 0;
+  background: var(--color-bg-dark);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.hello {
+  margin: 0 0 16px;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  color: var(--color-text-muted);
+}
+
+.name {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(44px, 8vw, 72px);
+  line-height: 1.02;
+  letter-spacing: -1.5px;
+}
+
+.pink {
+  color: var(--color-pink);
+}
+
+.role {
+  margin: 18px 0 0;
+  font-family: var(--font-mono);
+  font-size: clamp(20px, 3vw, 26px);
+  color: var(--color-cyan);
+}
+
+.blink {
+  color: var(--color-pink);
+  animation: blink 1.1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.summary {
+  margin: 24px 0 0;
+  max-width: 520px;
+  font-size: 18px;
+  color: var(--color-text-soft);
+}
+
+.actions {
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.code {
+  margin: 0;
+  padding: 24px 24px 28px;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--color-text);
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.k {
+  color: var(--color-pink);
+}
+.v {
+  color: var(--color-green);
+}
+.s {
+  color: var(--color-yellow);
+}
+.e {
+  color: var(--color-cyan);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    gap: 40px;
+    padding-bottom: 72px;
+  }
+  .code {
+    font-size: 13px;
+    padding: 18px;
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "health-records",
+    "title": "Health Records Organiser",
+    "status": "in-progress",
+    "kind": "personal project",
+    "description": "Keeps medical papers and blood test results in one place, and uses an LLM to turn them into clear, practical lifestyle suggestions.",
+    "tags": ["Angular", "TypeScript", "LLM API"],
+    "repoUrl": "https://github.com/bttnhvs"
+  },
+  {
+    "id": "investment-research",
+    "title": "Investment Research Assistant",
+    "status": "in-progress",
+    "kind": "personal project",
+    "description": "Upload company reports and chat with them — answers come with references to the exact source, to support better investment decisions.",
+    "tags": ["Angular", "TypeScript", "LLM API"],
+    "repoUrl": "https://github.com/bttnhvs"
+  },
+  {
+    "id": "motorcycle-school",
+    "title": "Motorcycle School Booking Platform",
+    "status": "in-progress",
+    "kind": "personal project",
+    "description": "Login-based lesson and exam booking for a motorcycle school, with a course list, online booking and an admin panel for the instructors.",
+    "tags": ["Angular", "TypeScript", "NestJS"],
+    "repoUrl": "https://github.com/bttnhvs"
+  },
+  {
+    "id": "paint-by-numbers",
+    "title": "Paint-by-Numbers Webshop",
+    "status": "in-progress",
+    "kind": "personal project",
+    "description": "Customers upload a photo and get a paint-by-numbers preview — colours simplified, areas numbered — then order it as a ready-to-paint kit.",
+    "tags": ["Angular", "NestJS"],
+    "repoUrl": "https://github.com/bttnhvs"
+  }
+]
