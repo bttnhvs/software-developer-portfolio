@@ -50,7 +50,7 @@ npm install
 npm start          # dev server on http://localhost:4200
 npm test           # unit tests
 npm run lint       # ESLint
-npm run build      # production build → dist/portfolio/browser
+npm run build      # production build → dist/software-dev-portfolio/browser
 ```
 
 ## Updating content
