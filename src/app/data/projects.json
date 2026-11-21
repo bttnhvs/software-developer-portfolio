@@ -33,6 +33,7 @@
     "kind": "client project",
     "description": "Website for a Szeged-based workshop that hand-makes wigs for theatre productions — showcasing the work, the services and an enquiry form, backed by a NestJS API.",
     "tags": ["Angular", "TypeScript", "NestJS"],
-    "repoUrl": "https://github.com/bttnhvs"
+    "repoUrl": "https://github.com/bttnhvs",
+    "liveUrl": "https://endrodywigs.com"
   }
 ]
