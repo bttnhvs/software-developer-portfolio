@@ -27,12 +27,12 @@
     "repoUrl": "https://github.com/bttnhvs"
   },
   {
-    "id": "paint-by-numbers",
-    "title": "Paint-by-Numbers Webshop",
+    "id": "endrody-wigs",
+    "title": "Endrődy Wigs",
     "status": "in-progress",
-    "kind": "personal project",
-    "description": "Customers upload a photo and get a paint-by-numbers preview — colours simplified, areas numbered — then order it as a ready-to-paint kit.",
-    "tags": ["Angular", "NestJS"],
+    "kind": "client project",
+    "description": "Website for a Szeged-based workshop that hand-makes wigs for theatre productions — showcasing the work, the services and an enquiry form, backed by a NestJS API.",
+    "tags": ["Angular", "TypeScript", "NestJS"],
     "repoUrl": "https://github.com/bttnhvs"
   }
 ]
