@@ -1,0 +1,40 @@
+<section id="about" class="section" aria-labelledby="about-title">
+  <div class="container layout">
+    <div class="text">
+      <p class="eyebrow">02. about</p>
+      <h2 id="about-title" class="section-title">Design-minded developer</h2>
+      <p>
+        I'm a software developer based in Budapest. Most of my professional experience is in
+        frontend development with Angular, including several years working for companies in the
+        United Kingdom.
+      </p>
+      <p>
+        My favourite part of the job is the whole journey: figuring out how an app should look and
+        feel, then building it pixel by pixel. I care about clean interfaces, accessibility and code
+        that stays easy to read, test and extend.
+      </p>
+      <p>
+        Lately I've been expanding into the backend with <span class="cyan">NestJS</span>, so I can
+        take a product from first sketch to a fully working application.
+      </p>
+    </div>
+
+    <div class="side">
+      <div class="photo">
+        <div class="photo-frame" aria-hidden="true"></div>
+        <img src="img/bettina.jpg" alt="Bettina Hevesi" width="800" height="1000" loading="lazy" />
+      </div>
+
+      @for (group of skillGroups; track group.label) {
+        <div class="skills">
+          <p class="skills-label">// {{ group.label }}</p>
+          <ul class="chips" [attr.aria-label]="group.label + ' skills'">
+            @for (skill of group.skills; track skill) {
+              <li class="chip" [class]="'chip--' + group.tone">{{ skill }}</li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+</section>
